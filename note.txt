@@ -22,9 +22,33 @@ test basic GET POST code
 npm run start-dev
 
 
+// Without front end is ok, this is a back end only project that produce JSON result,
+// This front end got redirected the path is for testing, everything can be test with Postman.
+
+
+// in app.js
+let backendRoute = new URL("http://localhost:8000/api");
+
+
+
+// github repo
+echo "# xmlsitemap" >> README.md
+touch .gitignore
+// in .gitignore
+    # dependencies
+    /node_modules
+    node_modules/
+git init
+git add .
+git commit -m "get links from given xml sitemap url"
+git branch -M main
+git remote add origin https://github.com/fruit13ok/xmlsitemap.git
+git push -u origin main
+
 
 
 ////////////////////////////////////// sitemap //////////////////////////////////////////
+// use "sitemapper" to parse the xml sitemap to get to its key/value
 https://www.npmjs.com/package/sitemapper/v/2.0.0
 https://joeyg.me/blog/coding/generating-a-better-sitemap-for-your-nuxt-project
 
